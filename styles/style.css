@@ -1,10 +1,11 @@
+/* Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Google Fonts. */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&display=swap');
 
 /* 
                                         Header.
@@ -103,6 +104,12 @@ nav ul li a {
 .mary_banner_first_button {
     display: inline-block;
     margin-right: 20px;
+}
+
+#mary_banner img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
 }
 
 
@@ -378,6 +385,56 @@ footer {
     =====================================================================================
     */
 
+    header {
+        background-position: bottom left;
+        padding: 0 1em;
+    }
+
+    .marr_banner_margin_padding {
+        margin-left: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+
+    .marr_banner_margin_padding nav {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    nav h3 {
+        margin-bottom: .5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #mary_banner {
+        flex-direction: column;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #mary_banner_content {
+        text-align: center;
+    }
+
+    .mary_banner_content h2 {
+        margin-top: 1em;
+    }
+
+    .mary_banner_content p {
+        width: 100%;
+    }
+    
+    .mary_banner_first_button {
+        margin-bottom: 1em;
+    }
+
 
 
     /* 
@@ -454,6 +511,51 @@ footer {
 =========================================================================================
 */
 @media screen and (min-width: 576px) and (max-width: 960px) {
+
+        /* 
+                                       Header section.
+    =====================================================================================
+    */
+
+    header {
+        background-position: bottom left;
+    }
+
+    .marr_banner_margin_padding {
+        margin-left: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .marr_banner_margin_padding nav {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    nav h3 {
+        margin-bottom: .5em;
+    }
+
+    nav ul {
+        gap: 1em;
+    }
+
+    #mary_banner {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .mary_banner_content {
+        text-align: center;
+    }
+
+    .mary_banner_content h2 {
+        margin-top: 1em;
+    }
 
     /* 
                                         About me section.
